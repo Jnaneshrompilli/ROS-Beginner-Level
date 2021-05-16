@@ -144,6 +144,7 @@ add_executable(listener src/listener.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
+
 add_dependencies(talker beginner_level_generate_messages_cpp)
 add_dependencies(listener beginner_level_generate_messages_cpp)
 
@@ -165,6 +166,8 @@ catkin_install_python(PROGRAMS
    scripts/talker_1.py 
    scripts/talker_2.py
    scripts/listener.py
+   scripts/add_two_ints_server.py
+   scripts/add_two_ints_client.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
